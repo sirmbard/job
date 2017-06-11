@@ -1,0 +1,37 @@
+html
+    include includes/head
+
+block content
+                h1 title
+
+                // register form
+                form(method='POST' action='/register')
+                    div
+                        label(for='title') Vacancy name:
+                        input#title(type='text', name='title')
+                    div
+                        label(for='salaryMin') Minimum salary:
+                        input#salaryMin(type='Number', name='salaryMin')
+                    div
+                        label(for='salaryMax') Maximum salary:
+                        input#salaryMax(type='Number', name='salaryMax')
+                    div
+                        label(for='employer') Employer:
+                        input#employer(type='text', name='employer')
+                    div
+                        label(for='employerContacts') Employer contacts:
+                        input#employerContacts(type='text', name='employerContacts')
+                    div
+                        label(for='employerAbout') Employer About:
+                        textarea#employerAbout(cols='10' rows='5' name='employerAbout')
+                    div
+                        label(for='requirements') Job requirements:
+                        textarea#requirements(cols='10' rows='10' name='requirements')
+                    div
+                        label(for='responsibility') Responsibility:
+                        textarea#responsibility(cols='10' rows='5' name='responsibility')
+                    div
+                        label(for='consitions') Consitions:
+                        textarea#consitions(cols='10' rows='5' name='consitions')
+
+                    button(type='submit') Sign up
