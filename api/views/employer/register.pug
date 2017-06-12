@@ -1,0 +1,29 @@
+html
+    include ../includes/head
+
+block content
+    h1 #{title}
+
+    form(method='POST' action='/employer/register')
+        div
+            label(for='userName') User Name
+            input#userName(type='text', name='userName')
+        div
+            label(for='password') Password:
+            input#password(type='password', name='password')
+        div
+            label(for='employerTitle') Employer Title:
+            input#employerTitle(type='text', name='employerTitle')
+        div
+            label(for='employerPhoneNumber') Phone Number:
+            input#employerPhoneNumber(type='text', name='employerPhoneNumber')
+        div
+            label(for='employerAbout') Employer About:
+            textarea#employerAbout(cols='10' rows='5' name='employerAbout')
+        div
+            label(for='employerMail') Email:
+            input#employerMail(type='text', name='employerMail')
+        div
+            label(for='employerAdress') Adress:
+            textarea#employerAdress(cols='10' rows='5' name='employerAdress')
+        button(type='submit') Sign up
