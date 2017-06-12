@@ -20,7 +20,7 @@ app.set('view engine', 'pug');
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
-app.use(require('./api/controllers/'));
+app.use(require('./api/controllers/route'));
 
 
 
